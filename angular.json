@@ -48,6 +48,7 @@
                 }
               ],
               "optimization": true,
+              "baseHref": "/avanzado/",
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
@@ -127,6 +128,12 @@
             "production": {
               "devServerTarget": "app:serve:production"
             }
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/avanzado/"
           }
         }
       }
